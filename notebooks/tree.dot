@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="event_4 <= 3.5\nsamples = 11627\nvalue = [5860, 5767]\nclass = Jack's Surprise!", fillcolor="#e5813904"] ;
+1 [label="event_4 <= 1.5\nsamples = 6645\nvalue = [2146, 4499]\nclass = Jack's hide", fillcolor="#399de585"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="event_5 <= 0.5\nsamples = 3223\nvalue = [689, 2534]\nclass = Jack's hide", fillcolor="#399de5ba"] ;
+1 -> 2 ;
+3 [label="samples = 387\nvalue = [141, 246]\nclass = Jack's hide", fillcolor="#399de56d"] ;
+2 -> 3 ;
+4 [label="samples = 2836\nvalue = [548, 2288]\nclass = Jack's hide", fillcolor="#399de5c2"] ;
+2 -> 4 ;
+5 [label="event_1 <= 4.5\nsamples = 3422\nvalue = [1457, 1965]\nclass = Jack's hide", fillcolor="#399de542"] ;
+1 -> 5 ;
+6 [label="samples = 1660\nvalue = [563, 1097]\nclass = Jack's hide", fillcolor="#399de57c"] ;
+5 -> 6 ;
+7 [label="samples = 1762\nvalue = [894, 868]\nclass = Jack's Surprise!", fillcolor="#e5813907"] ;
+5 -> 7 ;
+8 [label="event_4 <= 6.5\nsamples = 4982\nvalue = [3714, 1268]\nclass = Jack's Surprise!", fillcolor="#e58139a8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="event_1 <= 11.5\nsamples = 2450\nvalue = [1558, 892]\nclass = Jack's Surprise!", fillcolor="#e581396d"] ;
+8 -> 9 ;
+10 [label="samples = 1233\nvalue = [682, 551]\nclass = Jack's Surprise!", fillcolor="#e5813931"] ;
+9 -> 10 ;
+11 [label="samples = 1217\nvalue = [876, 341]\nclass = Jack's Surprise!", fillcolor="#e581399c"] ;
+9 -> 11 ;
+12 [label="event_1 <= 9.5\nsamples = 2532\nvalue = [2156, 376]\nclass = Jack's Surprise!", fillcolor="#e58139d3"] ;
+8 -> 12 ;
+13 [label="samples = 257\nvalue = [177, 80]\nclass = Jack's Surprise!", fillcolor="#e581398c"] ;
+12 -> 13 ;
+14 [label="samples = 2275\nvalue = [1979, 296]\nclass = Jack's Surprise!", fillcolor="#e58139d9"] ;
+12 -> 14 ;
+}
