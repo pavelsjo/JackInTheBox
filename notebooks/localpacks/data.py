@@ -48,5 +48,6 @@ def clean_data(df):
     df = df.dropna() #drop rows with NAN values
     df = df.drop_duplicates(df.columns[df.columns.isin(['user_id'])], keep = 'first') #work with only one user_id
     df = df[df.gender != 'unknown'] #drop gender with unkwown values
+    df = df.loc[df.index > '2018-07-01'] #month filter
     
     return df
